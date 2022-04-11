@@ -1,29 +1,28 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "nukerworld",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "NukerWorld",
+  "description": "A mod that adds radioactive materials and items into the game.",
   "authors": [
-    "Me!"
+    "kjord021"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "",
+    "sources": "https://github.com/kjord021/NukerWorld"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/nukerworld/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "com.kjord021.nukerworld.NukerWorld"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
   ],
 
   "depends": {
