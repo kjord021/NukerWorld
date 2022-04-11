@@ -13,8 +13,8 @@ import net.minecraft.util.registry.Registry;
 
 public class ModBlocks {
 
-    public static final Block WEAPON_INFUSER = new Block(FabricBlockSettings.of(Material.METAL));
-    public static final RadioactiveBlock URANIUM_ORE = new RadioactiveBlock(FabricBlockSettings.of(Material.STONE));
+    public static final Block WEAPON_INFUSER = new Block(FabricBlockSettings.of(Material.METAL).strength(.2f).requiresTool());
+    public static final RadioactiveBlock URANIUM_ORE = new RadioactiveBlock(FabricBlockSettings.of(Material.STONE).strength(6f).requiresTool());
 
     public static void RegisterItems() {
         Registry.register(Registry.BLOCK, new Identifier(NukerWorld.MOD_ID, "weapon_infuser"), WEAPON_INFUSER);
